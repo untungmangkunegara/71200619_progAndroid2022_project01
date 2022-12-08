@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="20dp"
     tools:context=".MainActivity">
 
 
@@ -18,15 +19,102 @@
         android:textStyle="bold"
         android:text="Pemesanan Tiket Pesawat" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <RadioGroup
+        android:id="@+id/rgKotaAsal"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:id="@+id/tvKotaAsal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Silahkan pilih kota asal:"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbYogyaAsal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yogyakarta" />
+
+        <RadioButton
+            android:id="@+id/rbJakartaAsal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jakarta" />
+
+        <RadioButton
+            android:id="@+id/rbBaliAsal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bali" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgKotaTujuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:id="@+id/tvKotaTujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Silahkan pilih kota tujuan:"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbYogya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yogyakarta" />
+
+        <RadioButton
+            android:id="@+id/rbJakarta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jakarta" />
+
+        <RadioButton
+            android:id="@+id/rbBali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bali" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvTanggalKeberangkatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="Tanggal Kebarangkatan:" />
+
+    <EditText
+        android:id="@+id/edtTanggalKeberangkatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btnSubmit1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        tools:srcCompat="@tools:sample/avatars" />
-
-
+        android:text="SUBMIT" />
 
 
 </LinearLayout>
